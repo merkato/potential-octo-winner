@@ -2,16 +2,42 @@
 \chapter{Co to są otwarte dane?}
 \section{Zdefiniujmy pojęcie}
 Nasze rozważania na temat otwartych danych zacznijmy od definicji pojęcia "otwarte" i "wolne". Podstawą niech będzie "otwarta definicja" - publikacja fundacji "Open Knowledge Foundation"\footnote{http://opendefinition.org/od/2.0/pl/}
-\begin{mdframed}[backgroundcolor=code-gray]
+\szare{
 Otwarte oznacza że każdy ma prawo dostępu, wykorzystania, zmian, i współdzielenia w dowolnym celu (pod warunkiem, co najwyżej, informowania o pochodzeniu danych i otwartości).
-\end{mdframed}
-Definicja w takiej formie powstała w roku 2004. Obecnie obowiązuje wersja 2.1 tego dokumentu. 
+}
+Definicja w takiej formie powstała w roku 2004. Obecnie obowiązuje wersja 2.1 tego dokumentu.
 
 \section{Historia otwartości}
-\section{Open Source}
 
-Źródłem dla idei Open Data jest ruch Free Software, a następnie Open Source. ]
-\section{Open Data}
-	Podstawowe ustawienia	 
+Całość działań "wolnościowych" we współczesnej informatyce i nauce swój wspólny początek ma w laboratorium sztucznej inteligencji Massachusetts Institute of Technology\footnote{https://en.wikipedia.org/wiki/MIT\_Computer\_Science\_and\_Artificial\_Intelligence\_Laboratory}. Grupa zatrudnionych tam naukowców, w obliczu zmian prawnych, w szczególności wprowadzenia Copyright Act of 1976\footnote{https://en.wikipedia.org/wiki/Copyright\_Act\_of\_1976}, przepisów prawa autorskiego, obejmujących ochroną prawnoautorską programy komputerowe. Pierwotnie, większość programów komputerowych, tworzonych w agencjach rządowych Stanów Zjednoczonych miała jawnie dostępny kod źródłowy, co pozwalało na ich modyfikację, wprowadzanie nowych funkcjonalności, czy poprawianie zauważonych błędów. Pod koniec lat 70 XX wieku zaczęło się jednak pojawiać oprogramowanie stworzone przez komercyjne firmy, o zamkniętym kodzie źródłowym. W 1979 roku Brain Reid wprowadził do środowiska składu tekstu \textbf{Scribe} tzw. bomby czasowe. W następnym roku środowisku programistów AI Lab odmówiono dostępu do kodu źródłowego oprogramowania drukarki Xerox 9700. Dotychczas mogli oni modyfikować oryginalne oprogramowanie dostosowując je do swoich potrzeb, np. wprowadzając powiadamianie o zakończeniu druku dla konkretnego użytkownika wysyłane przez email. Drukarka ta znajdowała się na innym piętrze budynku MIT, co miało znaczenie w tym przypadku. To i kolejne takie zdarzenia powodowały narastający bunt wśród pracowników AI Lab. W lutym 1984 roku Richard Stallman odszedł z zespołu AI Lab aby tworzyć system operacyjny i środowisko programistyczne GNU (GNU's not Unix). W październiku 1985 roku do życia powołana została Free Software Foundation. 
+\subsection{Free Software Foundation}
+Działania FSF 
+\subsection{Open Source}
+	W lutym 1998 roku Bruce Perens, Eric Raymond i kilkanaście innych osób powołało do życia Open Source Initiative. Miała ona na celu promocję rozwiązań otwarto-źródłowych w informatyce. W szczególny sposób działania te skierowano do firm komercyjnych, aby przekonać je do rozwoju oprogramowania w tym modelu.
+	Kolejnym milowym krokiem w rozwoju OpenSource było najpierw utworzenie dystrybucji GNU/Linux Debian a następnie Ubuntu w październiku 2004 roku. W przypadku tego drugiego, w dużej części źródłem sukcesu jest model biznesowy fimry Canonical, wydawcy systemu. Zakłada on że o ile sam system operacyjny wraz z kodem źródłowym jest dostępny nieodpłatnie, o tyle wsparcie techniczne jest dostępne jako usługa płatna. W związku z tym firmy którym zależy jednocześnie na niskich kosztach wdrożenia i utrzymania oraz bezpieczeństwie infrastruktury informatycznej, bardzo często decydują się na wykorzystanie Ubuntu jako podstawy dla swoich prac.
+	Ruchy wolnego i otwartego oprogramowania przenikają się, często podnosi się że o ile otwartość oprogramowania jest głównie sprawą technicznego dostępu, o tyle pojęcie wolności dotyczy spraw moralnych i etycznych.
+	\szare{Free software is a political movement; open source is a development model.
+		
+		— Richard Stallman}
+\section{OpenData}
+\subsection{Open Geospatial Consortium}
+Open Geospatial Consortium (OGC) jest międzynarodową organizacją typu non-profit, zrzeszającą ponad 450 firm, agencji rządowych i uniwersytetów[1]. Współpracują nad rozwijaniem i implementacją otwartych standardów dla danych i usług przestrzennych, systemów informacji geograficznej (GIS), do celów przetwarzania danych i ich udostępniania.
+
+Standardy OGC są szeroko i powszechnie stosowane, umożliwiają współdziałanie różnych systemów informatycznych.
+Konsorcjum OGC zostało utworzone w roku 1994 i do roku 2004 działało pod nazwą Open GIS Consortium. Celem prac jest rozwój i upowszechnianie wolnych standardów w zakresie danych i usług geoprzestrzennych. Konsorcjum ściśle współpracuje z ISO/TC 211, a wynikami jego prac są specyfikacje abstrakcyjne OGC i specyfikacje implementacyjne OGC.
+Standardy OGC obejmują ponad 30 standardów[4], między innymi:
+\begin{itemize}
+	\item CSW - Catalog Service for the Web: interfejs do metadanych
+	\item Geography Markup Language (GML) - Geography Markup Language: format XML zapisu danych geograficznych
+	\item Keyhole Markup Language (KML) - Keyhole Markup Language: format XML zapisu danych przestrzennych, również trójwymiarowych, oraz ich wizualizacji
+	\item Styled Layer Descriptor (SLD) - format XML opisujący wygląd danych (styl)
+	\item Web Coverage Service (WCS) - Web Coverage Service
+	\item Web Feature Service (WFS) - Web Feature Service: usługa udostępniania danych w formacie GML
+	\item Web Map Service (WMS) - Web Map Service: usługa udostępniania map w formie obrazów (np. png, jpg)
+	\item Web Map Tile Service (WMTS) - Web Map Tile Service: usługa udostępniania map kafelkowanych
+	\item Web Processing Service (WPS) - Web Processing Service: zdalna usługa przetwarzania danych
+\end{itemize}
+OGC blisko współpracuje z komitetem ISO/TC 211 (zajmujący się informacją geograficzną). Standardy z serii ISO 19100 powoli zastępują abstrakcyjne specyfikacje OGC. Niektóre standardy OGC, takie jak WMS, GML, WFS stały się standardem ISO.\footnote{https://pl.wikipedia.org/wiki/Open\_Geospatial\_Consortium}
+
 
 

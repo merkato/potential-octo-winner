@@ -1,9 +1,14 @@
 \newgeometry{left=1cm,top=1.5cm}
 \chapter{Usługi danych przestrzennych}
 	\section{Web Map Service}
-	Podstawowe ustawienia
+Web Map Service (WMS) – stworzony przez Open Geospatial Consortium (OGC) standard udostępniania map w postaci rastrowej za pomocą interfejsu HTTP.
+
+W zapytaniu do serwera WMS podaje się parametry mapy (żądane warstwy, obszar geograficzny, układ współrzędnych). W odpowiedzi przesyłany jest obraz mapy (np. w formacie JPEG, PNG, GIF), wygenerowany przez serwer na podstawie danych zawartych w bazach danych (np. PostGIS) lub plikach (np. GML, ESRI shapefile).
+W celu wyświetlenia map użytkownik łączy się z serwerem WMS przy pomocy klienta WMS (najczęściej jest to specjalny program). Klient pobiera z serwera metadane, w których znajduje się lista dostępnych warstw, obsługiwane formaty, systemy współrzędnych itp. Użytkownik wybiera interesujące go warstwy, a program wysyła do serwera zapytanie o gotowy wycinek mapy o zadanych wymiarach i położeniu.
+
+Pierwszą wersję standardu WMS (1.0.0) OGC wydało w kwietniu 2000 roku, kolejną (1.1.0) - w czerwcu 2001. Trzecia wersja (1.1.1) wydana została w styczniu 2002. Najnowsza wersja 1.3.0 wydana została w marcu 2006 roku; jest to ten sam dokument, co ISO 19128\footnote{http://www.opengeospatial.org/standards/wms}.
 	\section{Web Feature Service}
-	Podstawowe ustawienia	
+Web Feature Service (WFS) - kolejny ze standardów OGC - słuzący przesyłaniu map w postaci wektorowej za pomocą protokołu HTTP. Struktura zapytania jest bardzo podobna do WMS, parametry są podawane w identyczny sposób. Aktualna wersja WFS 2.0 pochodzi z 2014 roku.	
 	\section{Web Coverage Service}
 	Podstawowe ustawienia	 
 	\section{Web Processing Service}
