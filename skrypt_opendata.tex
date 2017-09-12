@@ -1,0 +1,50 @@
+\documentclass[12pt]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{polski}
+\usepackage[polish]{babel}
+\usepackage{geometry}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{import}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{indentfirst}
+\usepackage{mdframed}
+%\usepackage{titlesec}
+\graphicspath{ {img/} }
+\definecolor{titlepagecolor}{cmyk}{0.7,.30,0,.40}
+\definecolor{miejscekolor}{cmyk}{0,0,1,.10}
+\definecolor{code-gray}{gray}{0.95}
+\definecolor{medium-gray}{gray}{0.85} 
+\author{Tomasz Nycz}
+\title{Otwarte dane przestrzenne - Dobre praktyki}
+\date{}
+\begin{document}
+\setlength{\parindent}{1cm} % Default is 15pt.
+\lstdefinestyle{kod}{
+	backgroundcolor=\color{code-gray},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{code-gray},
+	stringstyle=\color{codepurple},
+	basicstyle=\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{style=kod}
+\import{/}{str_tytulowa.tex}
+\import{/}{rozdzial_1.tex}
+\import{/}{rozdzial_2.tex}
+\import{/}{rozdzial_3.tex}
+\import{/}{rozdzial_4.tex}
+\tableofcontents
+\end{document}
